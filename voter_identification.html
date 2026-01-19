@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <main>
+        <header>
+            
+        </header>
+        <body>
+            <div class="content">
+                <h1>Electoral Role Search</h1>
+                <hr />
+                <br>
+                <form action="vote.php" method="post">
+                    Full Name <br><input type="text" placeholder="Enter your full name here..." name="full_name"><br><br>
+                    Address <br><input type="text" placeholder="Search address here..." name="address"><br><br>
+                    Appartment Suit, etc (optional) <br><input type="text" name="appartment"><br><br>
+                    Suburb <br><input type="text" placeholder="Search location here..." name="suburb"><br><br>
+                    State <br><input type="text" name="state"><br><br>
+                    Postcode <br><input type="text" name="postcode"><br><br>
+                    Have you voted before in THIS election? (Tick if already voted)
+                    <br><input type="checkbox" style="width:auto" name="voted"><br><br> 
+                    <button type="submit">Next</button>
+                </form>
+                <!-- <script>
+                    (function() {
+                        var widget, initAddressFinder = function() {
+                            widget = new AddressFinder.Widget(
+                                document.getElementById(''),
+                                'ADDRESSFINDER_DEMO_KEY',
+                                'AU', {
+                                    "address_params": {
+                                        "source": "gnaf,paf"
+                                    }
+                                }
+                            );
+                    
+                            widget.on('address:select', function(fullAddress, metaData) {
+                                document.getElementById('').value = metaData.full_address
+                            });
+                        };
+                    
+                        function downloadAddressFinder() {
+                            var script = document.createElement('script');
+                            script.src = 'https://api.addressfinder.io/assets/v3/widget.js';
+                            script.async = true;
+                            script.onload = initAddressFinder;
+                            document.body.appendChild(script);
+                        };
+                    
+                        document.addEventListener('DOMContentLoaded', downloadAddressFinder);
+                    })();
+                </script> -->
+            </div>
+            
+        </body>
+    </main>
+
+</html>
